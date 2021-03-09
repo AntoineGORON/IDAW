@@ -1,0 +1,46 @@
+h1{
+    color : red
+}
+
+a{
+    color :rgb(255, 255, 255)
+}
+
+.ligne{
+    flex-flow: row wrap;
+}
+.debut{
+    justify-content: flex-start;
+}
+.fin{
+    justify-content: flex-end;
+}
+.centre{
+    justify-content: center;
+}
+
+.conteneur-flexible{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: rgb(85, 77, 40); /*Bleu*/
+    width: 100%;
+    height: 600px;
+    border: 2px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 20px 0px;
+    flex-direction: column;
+}
+
+
+.element-flexible{
+    flex: 5 2 20px;
+    background-color: rgb(59, 37, 19); /*Vert*/
+    width: 25%;
+    border: 2px solid rgb(15, 1, 27);
+    box-sizing: border-box;
+    margin: 20px;
+}
+
