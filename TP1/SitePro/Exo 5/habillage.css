@@ -38,6 +38,9 @@ a{
     align-items: space-evenly;
 }
 
+#currentpage{
+    color: slategray;
+}
 
 .bleu-fonce{background-color: rgb(5, 30, 43);}
 .bleu{background-color: rgb(36, 37, 133);}
@@ -45,7 +48,13 @@ a{
 .bleu-pale{background-color: rgb(61, 155, 231);}
 
 
+.h-index{
+    height: 175px;
+}
 
+.h-hobbies{
+    height: 500px;
+}
 
 .conteneur-flexible{
     display: flex;
@@ -61,13 +70,12 @@ a{
 
 .element-flexible{
     flex: 2 1 200px;
-    width: 50%;
+    width: 100%;
     border: 0px solid rgb(15, 1, 27);
     margin: 0px;
     box-sizing: border-box;
-    flex-basis =0;
 }
 
 body{
-    background-color: slategray;
+    background-color: rgb(159, 166, 173);
 }
