@@ -1,0 +1,81 @@
+h1{
+    color : red
+}
+
+a{
+    color :rgb(255, 255, 255)
+}
+
+.colonne{
+    flex-flow: column wrap;
+}
+
+.ligne{
+    flex-flow: row wrap;
+}
+
+.debut{
+    align-items: flex-start;
+}
+
+.fin{
+    align-items: flex-end;
+}
+
+.centre{
+    align-items: center;
+}
+
+.espace-milieu{
+    align-items: space-between;
+}
+
+.espace-autour{
+    align-items: space-around;
+}
+
+.espace-milieu2{
+    align-items: space-evenly;
+}
+
+#currentpage{
+    color: slategray;
+}
+
+.bleu-fonce{background-color: rgb(5, 30, 43);}
+.bleu{background-color: rgb(36, 37, 133);}
+.bleu-clair{background-color: rgb(33, 71, 197);}
+.bleu-pale{background-color: rgb(61, 155, 231);}
+
+
+.h-index{
+    height: 175px;
+}
+
+.h-hobbies{
+    height: 500px;
+}
+
+.conteneur-flexible{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    width: 100%;
+    border: 0px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 0px 0px;
+}
+
+
+.element-flexible{
+    flex: 2 1 200px;
+    width: 100%;
+    border: 0px solid rgb(15, 1, 27);
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(159, 166, 173);
+}
