@@ -28,5 +28,5 @@
 
 </section>
 <?php
-require_once("teamplate_footer.php");
+    require_once("teamplate_footer.php");
 ?>

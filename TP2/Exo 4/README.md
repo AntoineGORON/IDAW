@@ -1,0 +1,1 @@
+On a besoin d'un seul fichier teamplate_header, et il va nous servir autant de fois que ce code apparait, c'est pour ca que c'est aussi intéressant. ca peut aussi permettre de changer en un changement, plusieurs choses sur des pages différentes
