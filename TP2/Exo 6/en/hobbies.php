@@ -1,6 +1,6 @@
 
         
-        <div class="conteneur-flexible conteneur-hw-autres ligne ">
+        <div class="conteneur-flexible ligne ">
             <div class="element-flexible bleu-clair element-hw-autres"> <center> <h2>My Hobbies<h2> 
             <h3> Poker <h3>   
             <img src = "images/cartes-poker.jpg"> 

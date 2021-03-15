@@ -1,3 +1,3 @@
-<h1> Merci de votre visite <h1>
+<center> Merci de votre visite <center>
 </body>
 </html>

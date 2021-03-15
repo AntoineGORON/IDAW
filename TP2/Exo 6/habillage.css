@@ -1,5 +1,5 @@
 h1{
-    color : red
+    color : rgb(8, 7, 100)
 }
 
 a{
@@ -86,6 +86,7 @@ a{
     border: 2px solid rgb(1, 9, 14);
     box-sizing: border-box;
     margin: 10px;
+    flex-basis: 1;
 }
 
 body{

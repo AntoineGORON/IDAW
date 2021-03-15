@@ -1,5 +1,5 @@
  
-        <div class="conteneur-flexible conteneur-hw-autres ligne ">
+        <div class="conteneur-flexible ligne ">
             <div class="element-flexible bleu-clair element-hw-autres"> <center> <h2>Mes Passions<h2> 
             <h3> Poker <h3>
             <p>J'adore le poker voilà</p>   
