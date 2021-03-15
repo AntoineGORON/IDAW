@@ -1,9 +1,5 @@
-
-            <div class="conteneur-flexible h-hobbies">
-                <div class="element-flexible bleu-fonce"> 
-                </div> 
-                <div class="element-flexible bleu-clair">  
-                    <h1>Technical informations</h1>
-                </div>
+        
+        <div class="conteneur-flexible conteneur-hw-autres ligne ">
+            <div class="element-flexible bleu-clair element-hw-autres"> <center> <h2>Technical Informations<h2> </center>
             </div>
-
+        </div>        

@@ -7,11 +7,11 @@ a{
 }
 
 .colonne{
-    flex-direction: column wrap;
+    flex-direction: column;
 }
 
 .ligne{
-    flex-direction: row wrap;
+    flex-direction: row;
 }
 
 .debut{
@@ -46,41 +46,64 @@ a{
 .bleu{background-color: rgb(36, 37, 133);}
 .bleu-clair{background-color: rgb(33, 71, 197);}
 .bleu-pale{background-color: rgb(61, 155, 231);}
+.invisible{background-color: rgb(159, 166, 173);}
 
 
-.h-index{
-    height: 175px;
+.element-hw-menu{
+    height: 20%;
+    width: 100%;
 }
 
-.h-hobbies{
-    height: 500px;
+.element-hw-autres{
+    height: 100%;
+    width: 100%;
+}
+
+.conteneur-hw-menu{
+    width: 100%;
+    height: 150px;
+}
+
+.conteneur-hw-autres{
+    width: 100%;
+    height: 1200px;
 }
 
 .conteneur-flexible{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     align-content: space-around;
-    background-color: #0AD; /*Bleu*/
-    width: 100%;
-    height: 200px;
-    border: 2px solid blue;
+    border: 0px solid blue;
     box-sizing: border-box;
     margin: 20px 0px;
 }
 
 
 .element-flexible{
-    flex: 1 1 50px;
-    width: 40%;
-    height: 40%;
-    background-color: #0DA; /*Vert*/
-    border: 2px solid green;
+    flex: 5 2 10px;
+    background-color: rgb(5, 30, 43); /*Vert*/
+    border: 2px solid rgb(1, 9, 14);
     box-sizing: border-box;
     margin: 10px;
 }
 
 body{
     background-color: rgb(159, 166, 173);
+}
+
+button{
+    background-color: black;
+}
+
+h2 {
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h3{
+    color:white;
 }

@@ -1,14 +1,10 @@
-
-            <div class="conteneur-flexible h-hobbies">
-                <div class="element-flexible bleu-fonce"> 
-                </div> 
-                <div class="element-flexible bleu-clair">  
-                    <h1>Mes Hobbies</h1>
-                    <h2>Poker</h2>
-                    <p>J'adore le poker voilà</p>
-                    <img src = "images/cartes-poker.jpg">
-                    <h2>Tennis</h2>
-                    J'aime bien le tennis aussi voila
-                </div>
+ 
+        <div class="conteneur-flexible conteneur-hw-autres ligne ">
+            <div class="element-flexible bleu-clair element-hw-autres"> <center> <h2>Mes Passions<h2> 
+            <h3> Poker <h3>
+            <p>J'adore le poker voilà</p>   
+            <img src = "images/cartes-poker.jpg"> 
+            <h3>Tennis</h3>
+            <p> J'aime bien le tennis aussi voila </p> </center>
             </div>
-
+        </div>        

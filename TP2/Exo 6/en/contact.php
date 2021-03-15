@@ -1,13 +1,10 @@
 
-            <div class="conteneur-flexible h-hobbies">
-                <div class="element-flexible bleu-fonce"> 
-                </div> 
-                <div class="element-flexible bleu-clair">  
-                    <h1>Contact</h1>
-                    <h2>Facebook</h2>
-                    <p>Here we are</p>
-                    <h2>E-Mail</h2>
-                    <p>goron.antoine@gmail.com</p>
-                </div>
-            </div>
 
+        <div class="conteneur-flexible conteneur-hw-autres ligne ">
+            <div class="element-flexible bleu-clair element-hw-autres"> <center> <h2>Contact me<h2> 
+            <h3> Facebook </h3>   
+            <p>Here we are</p>
+            <h3>E-Mail</h3>
+            <p>goron.antoine@gmail.com</p> </center>
+            </div>
+        </div>        

@@ -6,24 +6,24 @@
     $mymenu = array(
         // idPage titre
         'accueil' => array('Accueil', 'Welcome'),
-        'cv' =>  array('Cv', 'Cv'),
-        'hobbies' => array('Hobbies', 'Hobbies'),
+        'cv' =>  array('CV', 'CV'),
+        'hobbies' => array('Passions', 'Hobbies'),
         'infos_technique' => array('Infos Techniques', 'Technical Informations'),
         'contact' => array('Contact', 'Contact')
     );
 
     if ($currentLangId == 'en'){
         $la = 1;
-        echo "<button><a href= index.php?page=$currentPageId&lang=fr> Francais </button>";
+        echo "<center> <button background-color = black><a href= index.php?page=$currentPageId&lang=fr> Francais </button> </center>";
     }
     else{
         $la = 0;
-        echo "<button><a href= index.php?page=$currentPageId&lang=en> Anglais </button>";
+        echo "<center> <button><a href= index.php?page=$currentPageId&lang=en> Anglais </button> </center>";
     }
     
-    echo "<div class='container-flexible ligne'>";
+    echo "<div class='conteneur-flexible ligne invisible'>";
     foreach($mymenu as $pageId => $pageParameters) {
-        echo "<div class='element-flexible ligne'>";
+        echo "<div class='element-flexible hw-menu'>";
         if ($currentPageId == $pageId){
             echo "<a id= 'currentpage' href= index.php?page=$pageId&lang=$currentLangId>";
             echo $pageParameters[$la];

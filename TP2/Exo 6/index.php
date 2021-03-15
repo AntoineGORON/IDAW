@@ -1,5 +1,5 @@
 <header class="bandeau_haut">
-    <h1 class="titre">Antoine Goron</h1>
+    <center> <h1 class="titre">Bienvenue sur la page pro d'Antoine Goron</h1> </center>
 </header>
 
 <?php

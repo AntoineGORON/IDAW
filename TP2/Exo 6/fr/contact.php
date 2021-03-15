@@ -1,13 +1,9 @@
 
-            <div class="conteneur-flexible h-hobbies">
-                <div class="element-flexible bleu-fonce"> 
-                </div> 
-                <div class="element-flexible bleu-clair">  
-                    <h1>Contact</h1>
-                    <h2>Facebook</h2>
-                    <p>Voili voilou</p>
-                    <h2>Mail</h2>
-                    <p>goron.antoine@gmail.com</p>
-                </div>
+        <div class="conteneur-flexible conteneur-hw-autres ligne ">
+            <div class="element-flexible bleu-clair element-hw-autres"> <center> <h2>Contactez-moi<h2> 
+            <h3> Facebook </h3>   
+            <p>Antoine Goron, petite photo de profil Poudl'art</p>
+            <h3>E-Mail</h3>
+            <p>goron.antoine@gmail.com</p> </center>
             </div>
-
+        </div>        

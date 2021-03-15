@@ -1,10 +1,8 @@
 
-            <div class="conteneur-flexible">
-                <div class="element-flexible bleu-fonce"> 
-                </div> 
-                <div class="element-flexible bleu-clair">  
-                    <h1>Mon CV</h1>
-                    <p>Je suis à la recherche d'un stage, s'il vous plaît prenez-moi</p>
-                    <img src = "images/CV GORON.jpg">
-                </div>
+                    
+        <div class="conteneur-flexible conteneur-hw-autres ligne ">
+            <div class="element-flexible bleu-clair element-hw-autres"> <center> <h2>Mon CV</h2> 
+            <p>Je suis à la recherche d'un stage, s'il vous plaît prenez-moi </p>
+            <img src = "images/CV GORON.jpg"> </CENTER>
             </div>
+        </div>        

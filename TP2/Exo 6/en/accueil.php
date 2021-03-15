@@ -1,7 +1,6 @@
 
-        <div class="conteneur-flexible colonne h-index">
-            <div class="element-flexible bleu-clair "> <p>Here are my informations (I like me very well)</p>   </div>
+        <div class="conteneur-flexible conteneur-hw-autres ligne ">
+            <div class="element-flexible bleu-clair element-hw-autres"> <center> <h2>Welcome<h2> </center>  
+            <center> <p> On this website, you can have an access on all the informations you are looking for : My CV, My Hobbies, my technical Informations and you can also find how to contact me    </center>   
+            </div>
         </div>        
-        <div class="conteneur-flexible colonne h-index">
-            <div class="element-flexible bleu-pale "> Yo  </div>
-        </div>
