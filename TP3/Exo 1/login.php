@@ -1,4 +1,4 @@
-<form id="login_form" action="connected.php" method="POST">
+<center> <form id="login_form" action="connected.php" method="POST">
     <table>
     <tr>
         <th>Login :</th>
@@ -13,4 +13,4 @@
         <td><input type="submit" value="Se connecter..." /></td>
     </tr>
     </table>
-</form>
+</form></center>

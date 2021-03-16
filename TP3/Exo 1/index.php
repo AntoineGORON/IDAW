@@ -4,19 +4,23 @@
 
     $currentPageId = 'accueil';
     $currentLangId = 'fr';
-    $currentStyle = "habillage";
+    $currentStyle = 'habillage';  
     if(isset($_GET['page'])) {
         $currentPageId = $_GET['page'];
     }
+    
     if(isset($_GET['lang'])) {
         $currentLangId = $_GET['lang'];
     }
-    if(isset($_GET['css'])) {
-        $currentStyle = $_GET['css'];
+
+    if(isset($_COOKIE['cstyle'])){
+        $currentStyle = $_COOKIE['cstyle'];
     }
 
-    $cookiestyle = setcookie("style", $currentStyle, time()+3600);
-    echo "setcookie(\"style\", $currentStyle, time()+3600)";
+    if(isset($_GET['css'])) {
+        $currentStyle = $_GET['css'];
+        setcookie("cstyle", $currentStyle, time()+3600);
+    }
 ?>
 
 <header class="bandeau_haut">
@@ -26,6 +30,7 @@
 <?php
 
     require_once("teamplate_header.php");
+    require_once("login.php");
     require_once("teamplate_menu.php");
     renderMenuToHTML($currentPageId, $currentLangId, $currentStyle);
 
@@ -43,7 +48,7 @@
 
 <section class="corps">
 
-<?php
+<?php   
     $pageToInclude = "$currentLangId/$currentPageId.php";
     if(is_readable($pageToInclude)){
         require_once($pageToInclude);
