@@ -1,5 +1,5 @@
 <?php
-    function renderMenuToHTML($currentPageId, $currentLangId, $currentStyle) {
+    function renderMenuToHTML($currentPageId, $currentLangId) {
     // un tableau qui d\'efinit la structure du site
 
     $la = 0;

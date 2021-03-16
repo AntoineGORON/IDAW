@@ -1,4 +1,4 @@
-<center> <form id="login_form" action="connected.php" method="POST">
+<center> <form id="login_form" action="index.php" method="POST">
     <table>
     <tr>
         <th>Login :</th>

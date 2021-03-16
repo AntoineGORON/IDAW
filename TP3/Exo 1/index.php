@@ -1,10 +1,10 @@
-
-
 <?php
-
+    session_start();
     $currentPageId = 'accueil';
     $currentLangId = 'fr';
-    $currentStyle = 'habillage';  
+    $currentStyle = 'habillage';
+    $currentLogin = $_SESSION['login'];
+
     if(isset($_GET['page'])) {
         $currentPageId = $_GET['page'];
     }
@@ -21,18 +21,13 @@
         $currentStyle = $_GET['css'];
         setcookie("cstyle", $currentStyle, time()+3600);
     }
-?>
-
-<header class="bandeau_haut">
-    <center> <h1 class="titre">Bienvenue sur la page pro d'Antoine Goron</h1> </center>
-</header>
-
-<?php
-
+    require_once("connected.php");
     require_once("teamplate_header.php");
+    echo $currentLogin;
     require_once("login.php");
     require_once("teamplate_menu.php");
-    renderMenuToHTML($currentPageId, $currentLangId, $currentStyle);
+
+    renderMenuToHTML($currentPageId, $currentLangId);
 
 ?>
 

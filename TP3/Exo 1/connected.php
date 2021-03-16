@@ -26,6 +26,6 @@
         echo $errorText;
     } 
     else{
-        echo require_once("index.php");
+        $_SESSION['login'] = $tryLogin;
     }
 ?>
