@@ -3,7 +3,6 @@
     $currentPageId = 'accueil';
     $currentLangId = 'fr';
     $currentStyle = 'habillage';
-    $currentLogin = $_SESSION['login'];
 
     if(isset($_GET['page'])) {
         $currentPageId = $_GET['page'];
@@ -23,8 +22,16 @@
     }
     require_once("connected.php");
     require_once("teamplate_header.php");
-    echo $currentLogin;
-    require_once("login.php");
+
+    if ($_SESSION == array()){
+        require_once("login.php");
+    }
+    else{
+        $currentLogin = $_SESSION['login'];
+        echo "<center> Vous êtes connecté en tant que $currentLogin <br>";
+        echo "<a href=\"deconnexion.php\"><button type=\"button\">Déconnexion</button></a></center> <br><br>";
+    }
+
     require_once("teamplate_menu.php");
 
     renderMenuToHTML($currentPageId, $currentLangId);

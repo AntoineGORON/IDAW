@@ -19,11 +19,8 @@
             $errorText = "Erreur de login/password";
         } 
     }
-    else{
-        $errorText = "Merci d'utiliser le formulaire de login";
-    }
     if(!$successfullyLogged) {
-        echo $errorText;
+        echo "<center> $errorText </center>";
     } 
     else{
         $_SESSION['login'] = $tryLogin;
