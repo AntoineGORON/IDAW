@@ -41,7 +41,7 @@
 <center>
 <form id="style_form" action="index.php" method="GET">
     <select name="css">
-        <option value="habillage">Bleu Gris sympa</option>
+        <option value="habillage1">Bleu Gris sympa</option>
         <option value="habillage2">Le prochain est à voir</option>
     </select>
     <input type="submit" value="Appliquer" />
