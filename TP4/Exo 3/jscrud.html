@@ -1,0 +1,54 @@
+<!doctype html>
+    <head>
+        <title>Antoine</title>
+        <link rel="stylesheet" href="habillage1.css" type="text/css"
+        media="screen" title="default" charset="utf-8" />
+        <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <table class = "tableau-formulaire">
+            <thead>
+                <tr>
+                    <th>Nom </th>
+                    <th>Prenom </th>
+                    <th>Date de naissance </th>
+                    <th>Message </th>
+                    <th>Adore le cours </th>
+                </tr>
+            </thead>
+
+            <tbody id="table-content">
+                <tr>
+                    <td>Goron</td>
+                    <td>Antoine</td>
+                    <td>28/02/1999</td>
+                    <td>Je deteste Anna Pasquier</td>
+                    <td>Vrai</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form onsubmit="onFormSubmit();" autocomplete="off">
+            <p>Nom <input type="text" id="IDnom" name="nom"></p>
+            <p>Prenom <input type="text" id="IDprenom" name="prenom"></p>
+            <p>Date de naissance <input type="date" id="IDdate" name="date"> </p>
+            <p>Message: <br><textarea id="IDmessage" name="message"></textarea></p>
+            <input type="checkbox" id="Adore" name="question"> <label for="Adore">Adorez-vous le cours?</label>
+            <p><button type="submit">Submit</button></p>
+        </form>
+
+        <script>
+
+            function onFormSubmit(){
+                event.preventDefault();
+                resultat = "J'adore ce cours ouahhh";
+                if  ($("#Adore").val() != "on"){
+                    resultat = "Non, je déteste";
+                }
+                $("#table-content").append("<tr> <td>" + $("#IDnom").val() + "</td> <td>" + $("#IDprenom").val() + "</td>  <td>" + $("#IDdate").val() + "</td>  <td>" + $("#IDmessage").val() + "</td> <td>" + $("#Adore").val() + "</td> </tr>");
+            }
+        </script>
+            
+
+    </body>
+</html>
