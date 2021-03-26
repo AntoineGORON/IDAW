@@ -1,0 +1,90 @@
+<!doctype html>
+    <head>
+        <title>Antoine</title>
+        <link rel="stylesheet" href="habillage1.css" type="text/css"
+        media="screen" title="default" charset="utf-8" />
+        <meta charset="utf-8">
+        <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <table class = "tableau-formulaire">
+            <thead>
+                <tr>
+                    <th>Nom </th>
+                    <th>Prenom </th>
+                    <th>Date de naissance </th>
+                    <th>Message </th>
+                    <th>Adore le cours </th>
+                    <th>CRUD</th>
+                </tr>
+            </thead>
+
+            <tbody id="table-content">
+
+            </tbody>
+        </table>
+
+        <form id="AddStudentForm" onsubmit="onFormSubmit();" autocomplete="off">
+            <p>Nom* <br id="contenu-nom"> <input type="text" id="IDnom" name="nom"></p>
+            <p>Prenom <br> <input type="text" id="IDprenom" name="prenom"></p>
+            <p>Date de naissance <br> <input type="date" id="IDdate" name="date"> </p>
+            <p>Message: <br><textarea id="IDmessage" name="message"></textarea></p>
+            <input type="checkbox" id="Adore" name="question"> <label for="Adore">Adorez-vous le cours?</label>
+            <p><button type="submit">Submit</button></p>
+        </form>
+
+        <script>
+            let currentMaxId = 2;
+            let students = [
+                {
+                    id: 1;
+                    nom: Goron;
+                    prenom: Antoine;
+                    message: Je deteste Anna Pasquier;
+                    aimeCours: "J'adore ce cours ouahhh";
+
+                }
+            ];
+            let currentEditedStudentId =-1;
+
+            function onFormSubmit(){
+                event.preventDefault();
+                let newStudent = {};
+                newStudent.nom = $("#IDnom").val();
+                newStudent.prenom = $("#IDprenom").val();
+                newStudent.date = $("#IDdate").val();
+                newStudent.message = ("#IDmessage").val();
+                newStudent.aimeCours = "J'adore ce cours ouahhh";
+                newStudent.id = currentMaxId;
+                currentMaxId = currentMaxId + 1;
+                if  (!$("#Adore").prop("checked")){
+                    newStudent.aimeCours = "Non, je déteste";
+                }
+                $("p").remove("#contenu-removable");
+                if ($("#IDnom").val() != ''){
+                    $("#table-content").append
+                    ("<tr id="+currentMaxId+"> <td>" 
+                    + newStudent.nom + "</td> <td>" 
+                    + newStudent.prenom + "</td>  <td>" 
+                    + newStudent.date+ "</td>  <td>" 
+                    + newStudent.message + "</td> <td>" 
+                    + newStudent.aimeCours 
+                    + "</td> <td> <button onclick=\"edit("+newStudent.id+")\" style=\"color:blue\">Edit</button>  <button onclick=\"remove("+newStudent.id+")\" style=\"color:blue\">Remove</button> </td> </tr>");
+                    
+                }
+                else{
+                    $("#contenu-nom").before("<p id=\"contenu-removable\" style=\"color:red\"> Ce champ doit être renseigné </p>");
+                }
+            }
+
+            function edit(id){
+                let studentToEdit = students[id];
+
+            }
+
+            function remove(b){
+                $("#"+b).empty();
+            }
+        </script>
+    </body>
+</html>
